@@ -16,6 +16,8 @@
   min-width: 90vw;
 }
 .aboutUs-tab summary {
+  display: flex;
+  justify-content: space-between;
   min-width: 73vw;
   padding: 1rem;
   list-style: none;

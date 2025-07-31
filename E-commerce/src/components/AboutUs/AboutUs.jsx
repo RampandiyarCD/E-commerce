@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import AboutUsCard from "./AboutUsCard";
 import QNA from "../../utils/aboutUs";
 
