@@ -1,7 +1,11 @@
-import React from 'react'
+import products from "./components/Datas"
+import ProductList from "./components/ProductList"
+
 
 export default function App() {
   return (
-    <div>App</div>
+    <div>
+      <ProductList product={products} />
+     </div>
   )
 }
