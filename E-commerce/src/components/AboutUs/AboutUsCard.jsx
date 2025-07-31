@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./aboutUs.css";
 const AboutUsCard = ({ props }) => {
   const { q, a } = props;
