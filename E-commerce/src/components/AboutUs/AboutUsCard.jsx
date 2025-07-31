@@ -13,9 +13,11 @@ const AboutUsCard = ({ props }) => {
           <p>{q}</p>
           <p> {isOpen ? "▲" : "▼"}</p>
         </summary>
-        <div className="aboutUs-tab-open">
-          <span>{a}</span>
-        </div>
+        {isOpen && (
+          <div className="aboutUs-tab-open">
+            <span>{a}</span>
+          </div>
+        )}
       </details>
     </div>
   );

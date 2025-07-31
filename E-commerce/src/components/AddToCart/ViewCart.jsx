@@ -13,12 +13,16 @@ const ViewCart = ({ props }) => {
 
   return (
     <div>
-      <button className="view-cart-btn" onClick={() => setOpen(true)}>view cart {`(${cartItems.length})`}</button>
+      <button className="view-cart-btn" onClick={() => setOpen(true)}>
+        view cart {`(${cartItems.length})`}
+      </button>
       {isOpen && (
         <div className="model-container">
           <div className="model-content">
-            <h1>Cart</h1>
-            <button onClick={() => setOpen(false)}>X</button>
+            <div className="model-heading">
+              <h1>Cart</h1>
+              <button onClick={() => setOpen(false)}>X</button>
+            </div>
             {cartItems.length === 0 ? (
               <p>no items in cart</p>
             ) : (
@@ -34,7 +38,7 @@ const ViewCart = ({ props }) => {
                     -
                   </button>
                   <button onClick={() => quantity(item.id, 1)}>+</button>
-                  <button onClick={() => handleDelete(item.id)}>delete</button>
+                  <button className="delete-btn"onClick={() => handleDelete(item.id)}>delete</button>
                 </div>
               ))
             )}
