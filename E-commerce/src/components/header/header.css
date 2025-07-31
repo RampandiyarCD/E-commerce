@@ -1,3 +1,4 @@
+
 .header{
     display: flex;
     justify-content: space-around;
@@ -19,10 +20,12 @@
     list-style: none;
     font-size: 20px;
     font-weight: 600;
+
 }
 .link{
     position: relative;
     cursor: pointer;
+    color: #2c3e50;
 }
 .link:hover{
     color: white;

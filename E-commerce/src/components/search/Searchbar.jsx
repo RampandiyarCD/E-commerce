@@ -1,17 +1,24 @@
-import React, { useContext, useState } from 'react';
+import { useState } from 'react';
 import './searchbar.css';
-import ProductContext from '../../context/Productcontext';
 
 export default function Searchbar() {
-    const { allProducts, setProducts } = useContext(ProductContext);
-    console.log(allProducts)
-    const [searchTerm, setSearchTerm] = useState('');
-    const handleSearch = () => {
-        const filteredProducts = allProducts.filter(product =>
-            product.name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setProducts(filteredProducts)
-        console.log('Searching for:', filteredProducts);
+    const data = JSON.parse(localStorage.getItem('Data'))
+    const products = data.products;
+
+    const [search, setsearch] = useState('');
+
+    const filteredProduct = products.filter(product => {
+        if (!product.name) return false;
+        return product.name.toLowerCase().includes(search.toLowerCase());
+    });
+
+    const handleSearchChange = (e) => {
+        setsearch(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Filtered products:', filteredProduct);
     };
 
     return (
@@ -20,16 +27,16 @@ export default function Searchbar() {
                 type="text"
                 className='search-bar'
                 placeholder="Product Name..."
-                onChange={(e) => setSearchTerm(e.target.value)}
+                value={search}
+                onChange={handleSearchChange}
             />
             <button
                 type="submit"
                 className='search-btn'
-                onClick={handleSearch}
+                onClick={handleSubmit}
             >
                 <i className="fa fa-search"></i>
             </button>
-
         </div>
     );
 }
