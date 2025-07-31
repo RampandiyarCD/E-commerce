@@ -1,0 +1,24 @@
+.view-cart-btn {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.model-container {
+  top: 0;
+  left: 0;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.model-content {
+  position: relative;
+  color: #000;
+  background-color: aliceblue;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  padding: 3rem;
+}
