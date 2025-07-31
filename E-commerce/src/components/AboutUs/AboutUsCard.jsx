@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import "./aboutUs.css";
 const AboutUsCard = ({ props }) => {
   const { q, a } = props;
-  const tabRef = useRef();
   const [isOpen, setOpen] = useState(false);
   const toggleTab = () => {
     setOpen(!isOpen);
@@ -12,9 +11,9 @@ const AboutUsCard = ({ props }) => {
       <details>
         <summary onClick={toggleTab}>
           <p>{q}</p>
-          <p> {isOpen ? "▼" : "▲"}</p>
+          <p> {isOpen ? "▲" : "▼"}</p>
         </summary>
-        <div className="aboutUs-tab-open" ref={tabRef}>
+        <div className="aboutUs-tab-open">
           <span>{a}</span>
         </div>
       </details>
