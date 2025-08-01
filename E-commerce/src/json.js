@@ -2,19 +2,21 @@ export const testimonial = [
   {
     "id": 1,
     "name": "Khalid",
-    "role": "intern",
-    "text": "He is passinate about new technology!"
+    "text": "The Product Was Nice And Woderful!"
   },
   {
     "id": 2,
     "name": "Sangeetha",
-    "role": "Intern",
-    "text": "She is handling upcoming clint in this project"
+    "text": "Cloth quality is Good!"
   },
   {
     "id": 3,
     "name": "Sulthan",
-    "role": "Intern",
-    "text": "He works perfectly. And Saved us so much time."
+    "text": "The Price is very low when compared to others."
+  },
+   {
+    "id": 4,
+    "name": "Ram",
+    "text": "I loved that recent T-shirt Combo Offer."
   }
 ]
