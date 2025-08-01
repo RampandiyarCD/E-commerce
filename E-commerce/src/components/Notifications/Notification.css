@@ -22,17 +22,17 @@ body {
 }
 
 .container.info {
-  background-color: #2196F3; 
+  color: #2196F3; 
 }
 
 .container.created {
-  background-color: #4CAF50; 
+  color: #4CAF50; 
 }
 
 .container.error {
-  background-color: #f44336; 
+  color: #f44336; 
 }
 
 .container.warning {
-  background-color: #ff9800;
+  color: #ff9800;
 }
