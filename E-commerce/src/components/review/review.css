@@ -8,7 +8,6 @@
   padding: 30px;
   border-radius: 20px;
   top: 0;
-
   background-color: #a78bfa;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .add-review-btn {
-  background-color: #f1effb;
+  background-color: #dad4fb;
   color: #2c3e50;
   border: none;
   padding: 5px 10px;

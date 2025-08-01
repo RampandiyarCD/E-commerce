@@ -12,8 +12,11 @@ export default function Review() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const lastRew = reviews[reviews.length - 1];
+    const newId = Number(lastRew.id) + 1;
 
     const newReview = {
+      id: newId,
       name,
       title,
       comment,

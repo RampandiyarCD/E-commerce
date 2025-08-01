@@ -10,11 +10,18 @@ export default function App() {
   }
   return (
     <div >
-      <Header />
-      <div className='contents'>
-        <Review />
+      <header>
+        <Header />
+      </header>
+      <main>
+        <div className='contents'>
+          <Review />
+        </div>
+      </main>
+      <footer>
         <Footer />
-      </div>
+      </footer>
+
     </div>
 
   );
