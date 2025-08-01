@@ -6,7 +6,7 @@ export default function Header() {
     <>
       <div className="header">
         <div className="header-logo">
-          Kiruba's Stores
+          Anything's Stores
         </div>
         <div className="search">
           <Searchbar />

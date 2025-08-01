@@ -19,20 +19,18 @@
   ],
   "reviews": [
     {
-      "id": "rev-001",
+      "id": "1",
       "name": "Ram",
-      "rating": 5,
       "title": "Great shopping experience",
       "comment": "Fast delivery and excellent customer service!",
-      "date": "2023-05-15"
+      "date": "15/05/2025"
     },
     {
-      "id": "rev-002",
+      "id": "2",
       "name": "Rwmo",
-      "rating": 4,
       "title": "Happy with my purchases",
       "comment": "Good quality products overall, would shop again",
-      "date": "2023-06-02"
+      "date": "13/02/2025"
     }
   ],
   "faqs": [
