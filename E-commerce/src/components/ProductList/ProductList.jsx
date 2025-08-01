@@ -1,8 +1,9 @@
 
 import { useState } from "react";
 import "./ProductList.css";
+import AddToCart from "../AddToCart/AddToCart";
 
-function ProductList({ product }) {
+function ProductList({ product ,cartItemsDispatch}) {
   const [page, setPage] = useState(0);
   const visiblePage = 3;
   const totalPages = Math.ceil(product.length / visiblePage);
@@ -37,6 +38,7 @@ function ProductList({ product }) {
               <h3>{prod.name}</h3>
               <p>{prod.price}</p>
               <p>{prod.description}</p>
+              <AddToCart props={{product:prod,cartItemsDispatch}}/>
             </div>
           ))}
         </div>

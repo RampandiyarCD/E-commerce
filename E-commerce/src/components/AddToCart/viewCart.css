@@ -1,8 +1,3 @@
-.view-cart-btn {
-  position: absolute;
-  top: 3rem;
-  right: 3rem;
-}
 
 .model-container {
   top: 0;
@@ -10,24 +5,37 @@
   display: flex;
   justify-content: center;
   position: absolute;
+  overflow: scroll;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
-.model-content {
+.model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   color: #000;
   background-color: aliceblue;
   border: 1px solid whitesmoke;
   border-radius: 8px;
   padding: 3rem;
-  width: 35rem;
+  width: 70rem;
   height: fit-content;
 }
 .model-heading{
   display: flex;
-  justify-content: space-between;
+
+}
+.model-heading h1{
+ margin-right: 50rem;
+}
+.model-content{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 1rem;
 }
 .model-heading button,.delete-btn{
   background-color: rgb(255, 67, 67);
@@ -35,4 +43,13 @@
 }
 .model-heading button:hover,.delete-btn:hover{
   background-color: red;
+}
+.product-card-btns{
+  display: flex;
+  justify-content: space-evenly;
+}
+.buyNow-btn{
+  padding: 1rem 2rem;
+  background-color: #a187f0;
+  color: white;
 }

@@ -1,10 +1,12 @@
 import React from "react";
+import { showMessage } from "../Notifications/NotifyPopup";
 
 const AddToCart = ({ props }) => {
   const { product, cartItemsDispatch } = props;
 
   const handleAddToCart = () => {
-  cartItemsDispatch({type:"addToCart",product})
+    cartItemsDispatch({ type: "addToCart", product });
+    showMessage(`${product.name} added to cart`);
   };
   return (
     <div>
