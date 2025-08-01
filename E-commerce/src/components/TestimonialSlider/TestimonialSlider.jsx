@@ -23,7 +23,8 @@ const TestimonialSlider = ({ testimonials}) => {
       <div className="single-slide"> 
         <div className="person-info">
           <h3 className="person-name">{testimonials[index].name}</h3>
-          <p className="text">"{testimonials[index].text}"</p>
+          <p className='text'> {testimonials[index].title}</p>
+          <p className="text">"{testimonials[index].comment}"</p>
                 </div>
       </div>
 

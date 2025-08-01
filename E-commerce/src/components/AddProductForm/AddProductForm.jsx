@@ -21,10 +21,11 @@ const AddProductForm = () => {
   const handleSubmit = (e) => {
   e.preventDefault();
 
-  const existingProducts = JSON.parse(localStorage.getItem('products')) || [];
+  const Data = JSON.parse(localStorage.getItem('Data')) || [];
+  const existingProducts = Data.products
   const updatedProducts = [...existingProducts, product];
 
-  localStorage.setItem('products', JSON.stringify(updatedProducts));
+  localStorage.setItem('Data', JSON.stringify({...Data,products:updatedProducts}));
 
   window.alert('Add Product Successfully!');
   setProduct({

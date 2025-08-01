@@ -10,6 +10,8 @@ import AboutUs from './components/AboutUs/AboutUs';
 import { NotifiyPopup } from './components/Notifications/NotifyPopup';
 import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider';
 import FAQ from './components/FAQ/FAQ';
+import AddProductForm from './components/AddProductForm/AddProductForm';
+import Filter from './components/filter/Filter';
 
 export default function App() {
   if (!localStorage.getItem('Data')) {
@@ -77,9 +79,12 @@ export default function App() {
         <OfferBanner />
         <ProductList product={products} cartItemsDispatch={cartItemsDispatch} />
         <AboutUs />
+        <TestimonialSlider testimonials={storedData.reviews}/>
         <Review />
         
         <FAQ />
+        <AddProductForm/>
+        <Filter/>
       </main>
       <footer>
         <Footer />
