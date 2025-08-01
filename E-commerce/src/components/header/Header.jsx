@@ -1,3 +1,4 @@
+
 import Searchbar from "../search/Searchbar";
 import "./header.css";
 
@@ -25,3 +26,7 @@ export default function Header() {
     </>
   )
 }
+
+
+export default Header;
+

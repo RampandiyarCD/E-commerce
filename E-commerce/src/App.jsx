@@ -1,3 +1,4 @@
+
 import Header from './components/header/Header';
 import Review from './components/review/Review';
 import data from './ecom.json'
@@ -25,4 +26,4 @@ export default function App() {
     </div>
 
   );
-}
+
