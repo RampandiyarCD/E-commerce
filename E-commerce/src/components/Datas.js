@@ -5,6 +5,7 @@ const products = [
     name: "Product A",
     image: "/image1.jpg",
     price: "$10",
+    category:"electronics",
     description: "This is the product 1",
   },
   {
@@ -12,6 +13,7 @@ const products = [
     name: "Product B",
     image: "/img2.jpg",
     price: "$20",
+    category:"stationary",
     description: "this is the product 2",
   },
   {
@@ -19,6 +21,7 @@ const products = [
     name: "Product C",
     image: "/img3.jpg",
     price: "$30",
+    category:"electronics",
     description: "this is the product 3",
   },
   {
@@ -26,6 +29,7 @@ const products = [
     name: "Product D",
     image: "/img4.jpg",
     price: "$40",
+    category:"stationary",
     description: "this is the product 4",
   },
   {
@@ -33,6 +37,7 @@ const products = [
     name: "Product E",
     image: "/img5.jpg",
     price: "$50",
+    category:"electronics",
     description: "This is the product 5",
   },
 ];
