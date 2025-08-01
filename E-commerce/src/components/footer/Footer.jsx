@@ -1,24 +1,30 @@
-import React from 'react';
-import './Footer.css';
+import './footer.css';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-top">
-        <div className="sales-contact">
-          <h3>Chat With us</h3>
-          <div className="contact-details">
-            <p className="phone">1 (888) 602-6756</p>
-            <p className="email">sales@anything.com</p>
-           
-        <p className="copyright">Powered by khalid&co</p>
-    
+      <div className="footer-container">
+        <div className="footer-section">
+          <h4 className="footer-title">Shop With Us</h4>
+          <div className="footer-links">
+            <a href="">Products</a>
+            <a href="">Offers</a>
+            <a href="">FAQ</a>
+          </div>
+        </div>
+        <div className="footer-section">
+          <h4 className="footer-title">Follow Us</h4>
+          <div className="footer-links">
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">X</a>
           </div>
         </div>
       </div>
-      
+      <div className="footer-bottom">
+        &copy; 2025 Anything's Stores, All rights reserved.
+      </div>
     </footer>
   );
 }
 
-export default Footer;

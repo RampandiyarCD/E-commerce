@@ -1,0 +1,39 @@
+
+.search-bar {
+    padding: 5px 15px;
+    width: 20vw;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #f1effb;
+}
+
+.search-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    background: #dad4fb; 
+    cursor: pointer; 
+    overflow: hidden; 
+}
+.search-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%; 
+    border-radius: 20px; 
+    z-index: -1;
+    background-color: white;
+    transition: width 0.2s ease; 
+}
+
+.search-btn:hover::after {
+    width: 100%;
+}
