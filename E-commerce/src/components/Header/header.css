@@ -5,7 +5,7 @@
   color: #2c3e50;
   width: 88vw;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 1rem 2rem;

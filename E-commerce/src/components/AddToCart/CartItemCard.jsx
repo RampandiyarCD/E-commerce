@@ -1,5 +1,4 @@
 import React from "react";
-import { showMessage } from "../Notifications/NotifyPopup";
 
 const CartItemCard = ({ props ,cartItemsDispatch}) => {
   const { id, image, name, price, description ,quantity} = props;
