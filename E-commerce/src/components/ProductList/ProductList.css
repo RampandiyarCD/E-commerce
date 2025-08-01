@@ -22,6 +22,7 @@
   width: 350px;
   border-radius: 5px;
   background: #a187f0;
+  border:1px solid #ffffffff;
 }
 
 h2 {
