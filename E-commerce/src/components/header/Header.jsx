@@ -2,7 +2,7 @@
 import Searchbar from "../search/Searchbar";
 import "./header.css";
 
-export default function Header() {
+export default function Header({props}) {
   return (
     <>
       <div className="header">
@@ -10,7 +10,7 @@ export default function Header() {
           Anything's Stores
         </div>
         <div className="search">
-          <Searchbar />
+          <Searchbar props={props}/>
         </div>
         <div className="header-links">
           <ul className="links">

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './searchbar.css';
 
-export default function Searchbar() {
+export default function Searchbar({ props }) {
+    const { setProducts } = props
     const data = JSON.parse(localStorage.getItem('Data'))
     const products = data.products;
 
@@ -18,7 +19,7 @@ export default function Searchbar() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Filtered products:', filteredProduct);
+        setProducts(filteredProduct)
     };
 
     return (

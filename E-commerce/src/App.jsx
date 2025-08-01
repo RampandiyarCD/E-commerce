@@ -9,6 +9,7 @@ import ProductList from './components/ProductList/ProductList';
 import AboutUs from './components/AboutUs/AboutUs';
 import { NotifiyPopup } from './components/Notifications/NotifyPopup';
 import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider';
+import FAQ from './components/FAQ/FAQ';
 
 export default function App() {
   if (!localStorage.getItem('Data')) {
@@ -59,7 +60,7 @@ export default function App() {
     }
   };
 
-  const [products] = useState(initProduct);
+  const [products, setProducts] = useState(initProduct);
   const [cartItems, cartItemsDispatch] = useReducer(
     cartItemsReducer,
     JSON.parse(localStorage.getItem("cartItems") || "[]")
@@ -68,7 +69,7 @@ export default function App() {
   return (
     <div>
       <header>
-        <Header props={{ cartItems, cartItemsDispatch }} />
+        <Header props={{ cartItems, cartItemsDispatch, setProducts }} />
         <NotifiyPopup />
 
       </header>
@@ -77,6 +78,8 @@ export default function App() {
         <ProductList product={products} cartItemsDispatch={cartItemsDispatch} />
         <AboutUs />
         <Review />
+        
+        <FAQ />
       </main>
       <footer>
         <Footer />

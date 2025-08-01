@@ -32,20 +32,23 @@ const FAQ = () => {
   };
 
   return (
-    <div className="faq-container">
-      {faqData.map((item, index) => (
-        <div
-          key={index}
-          className="faq-item"
-          onClick={() => handleClick(index)}
-          style={{ cursor: 'pointer' }}
-        >
-          <h3 className="faq-question">{item.question}</h3>
-          {activeIndex === index && (
-            <p className="faq-answer">{item.answer}</p>
-          )}
-        </div>
-      ))}
+    <div className='faq'>
+      <h1>FAQ</h1>
+      <div className="faq-container">
+        {faqData.map((item, index) => (
+          <div
+            key={index}
+            className="faq-item"
+            onClick={() => handleClick(index)}
+            style={{ cursor: 'pointer' }}
+          >
+            <h3 className="faq-question">{item.question}</h3>
+            {activeIndex === index && (
+              <p className="faq-answer">{item.answer}</p>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

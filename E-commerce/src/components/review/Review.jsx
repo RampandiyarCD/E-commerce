@@ -1,3 +1,4 @@
+import { showMessage } from "../Notifications/NotifyPopup";
 import "./review.css";
 import { useState } from "react";
 
@@ -29,12 +30,14 @@ export default function Review() {
         ...data,
         reviews: [...reviews, newReview],
       })
+
     );
 
     setName("");
     setTitle("");
     setComment("");
     setIsModalOpen(false);
+    showMessage("Review Added Successfully", "created")
   };
 
   return (
