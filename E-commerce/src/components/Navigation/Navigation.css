@@ -1,0 +1,30 @@
+.container-navigation{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    width:100%;
+    background-color:#a78bfa ;
+}
+
+.container-navigation img{
+    position: absolute;
+    left:20px;
+    width:100px;
+    height:100px;
+    padding:10px;
+}
+
+.container-navigation ul{
+    list-style:none;
+    margin-left:140%;
+    padding:10px;
+    display:flex;
+    flex-direction:row;
+}
+
+.container-navigation ul li{
+    margin:5px;
+    padding:10px;
+}
