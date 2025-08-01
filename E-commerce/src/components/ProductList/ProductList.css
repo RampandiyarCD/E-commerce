@@ -17,34 +17,32 @@
 }
 
 .product-card {
-  margin:10px; border: 2px solid #000000;
-  border: 1px solid #000000;
+  margin: 10px;
   padding: 20px;
-  width: 300px;
+  width: 350px;
   border-radius: 5px;
-  background:#a78bfa;
+  background: #a187f0;
 }
 
-h2{
-  font-size:30px;
-  font-family: 'Times New Roman', Times, serif;
+h2 {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: #2c3e50;
+  margin: 5px;
 }
-.product-card h3{
-  font-size: 23px;
+.product-card h3 {
   margin: 3px;
+  color: white;
 }
 
-.product-card p{
-  margin:3px;
-  font-size:20px;
+.product-card p {
+  margin: 3px;
+  color: white;
 }
-
-
 
 .product-card img {
   width: 100%;
   border-radius: 5px;
-  border: 2px solid #000000;
 }
 
 .btn-arrow {
