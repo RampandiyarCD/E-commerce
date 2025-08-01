@@ -19,7 +19,7 @@ const OfferBanner = () => {
 
   const startClosing = () => {
     setIsClosing(true);
-    setTimeout(() => setShowOffer(false), 2000);
+    setTimeout(() => setShowOffer(false), 500);
   };
 
   const handleClose = () => {

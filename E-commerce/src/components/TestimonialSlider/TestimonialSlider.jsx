@@ -20,12 +20,11 @@ const TestimonialSlider = ({ testimonials}) => {
 
   return (
     <div className="slider-box">
-      <div className="single-slide">
-        <p className="text">"{testimonials[index].text}"</p>
+      <div className="single-slide"> 
         <div className="person-info">
           <h3 className="person-name">{testimonials[index].name}</h3>
-          <p className="person-role">{testimonials[index].role}</p>
-        </div>
+          <p className="text">"{testimonials[index].text}"</p>
+                </div>
       </div>
 
       <div className="dot-box">

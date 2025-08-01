@@ -14,12 +14,12 @@
 
 .offer_ribbon {
   position: absolute;
-  top: 10px;
+  top: 40px;
   right: -30px;
   background: #e4e0e4;
   color: rgb(0, 0, 0);
   padding: 15px 40px;
-  transform: rotate(45deg);
+  transform: rotate(50deg);
   font-size: 0.8rem;
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -92,7 +92,7 @@
 .offer_close_button {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 12px;
   background: rgb(213, 205, 221);
   border: none;
   color: white;

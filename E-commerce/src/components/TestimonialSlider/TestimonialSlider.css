@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  background:linear-gradient(120deg,#be74d9,#dc47bc,#dab2ff);
+  background:linear-gradient(120deg,#b788c9,#A78BFA,#dab2ff);
   border-radius: 8px;
   box-shadow: 3px 3px 20px blueviolet;
 }
@@ -27,13 +27,8 @@
 .person-name {
   margin: 0;
   color: #000000;
-  font-size: 1.2rem;
-}
-
-.person-role {
-  margin: 5px 0 0;
-  color: #000000;
-  font-size: 1.1em;
+  font-size: 1.8rem;
+  font-family:'Courier', monospace;
 }
 
 .dot-box {
