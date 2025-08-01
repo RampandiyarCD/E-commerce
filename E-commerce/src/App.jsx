@@ -12,6 +12,7 @@ import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider'
 import FAQ from './components/FAQ/FAQ';
 import AddProductForm from './components/AddProductForm/AddProductForm';
 import Filter from './components/filter/Filter';
+import HelpF from './components/helpandsuppotform/form';
 
 export default function App() {
   if (!localStorage.getItem('Data')) {
@@ -81,8 +82,8 @@ export default function App() {
         <AboutUs />
         <TestimonialSlider testimonials={storedData.reviews}/>
         <Review />
-        
         <FAQ />
+        <HelpF/>
         <AddProductForm/>
         <Filter/>
       </main>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './form.css'
+import { showMessage } from '../Notifications/NotifyPopup';
 
 const HelpF = () => {
   const [Open, setOpen] = useState(false);
@@ -23,7 +24,8 @@ const HelpF = () => {
 
   const Submit = (e) => {
     e.preventDefault();
-    console.log(`Submitted Data:\n\nName: ${formData.name}\nEmail: ${formData.email}\nDescription: ${formData.description}`);
+    // console.log(`Submitted Data:\n\nName: ${formData.name}\nEmail: ${formData.email}\nDescription: ${formData.description}`);
+    showMessage("Mail sent successfully!")
     setOpen(false);
     };
 
@@ -32,9 +34,9 @@ const HelpF = () => {
   };
 
   return (
-    <div>
+    <center >
       <button onClick={openform} className="open-button">
-        {Open ? 'Close Email' : 'Email'}
+        {Open ? 'Close Email' : 'Send Email'}
       </button>
       {Open && (
         <div className="modal">
@@ -48,14 +50,14 @@ const HelpF = () => {
                 <p>Email:</p>
                 <input className="input" type="email" name="email" value={formData.email} onChange={Change} required/>
                 <p>Description:</p>
-                <textarea className="text" name="description" value={formData.description} onChange={Change} required></textarea>
+                <textarea className="textarea" name="description" value={formData.description} onChange={Change} required></textarea>
               </div>
               <button type="submit">Submit</button>
             </form>
           </div>
         </div>
       )}
-    </div>
+    </center>
   );
 }
 

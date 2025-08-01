@@ -1,4 +1,5 @@
 
+import ViewCart from "../AddToCart/ViewCart";
 import Searchbar from "../search/Searchbar";
 import "./header.css";
 
@@ -20,6 +21,7 @@ export default function Header({props}) {
             <li className="link">FAQ's</li>
             <li className="link">Helps</li>
             <li className="link">Reviews</li>
+            <ViewCart props={props}/>
           </ul>
         </div>
       </div>

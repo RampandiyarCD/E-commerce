@@ -1,9 +1,9 @@
 import React from "react";
 import AboutUsCard from "./AboutUsCard";
-import QNA from "../../utils/aboutUs";
-import "./aboutUs.css"
+import "./aboutUs.css";
 const AboutUs = () => {
-
+  const Data = JSON.parse(localStorage.getItem("Data")) || [];
+  const QNA = Data.QNA;
 
   return (
     <div className="aboutUs-container">
