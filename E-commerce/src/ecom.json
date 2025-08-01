@@ -17,22 +17,22 @@
       "image": "tshirt-1.jpg"
     }
   ],
-  "reviews": [
-    {
-      "id": "1",
-      "name": "Ram",
-      "title": "Great shopping experience",
-      "comment": "Fast delivery and excellent customer service!",
-      "date": "15/05/2025"
-    },
-    {
-      "id": "2",
-      "name": "Rwmo",
-      "title": "Happy with my purchases",
-      "comment": "Good quality products overall, would shop again",
-      "date": "13/02/2025"
-    }
-  ],
+    "reviews": [
+      {
+        "id": "1",
+        "name": "Ram",
+        "title": "Great shopping experience",
+        "comment": "Fast delivery and excellent customer service!",
+        "date": "15/05/2025"
+      },
+      {
+        "id": "2",
+        "name": "Rwmo",
+        "title": "Happy with my purchases",
+        "comment": "Good quality products overall, would shop again",
+        "date": "13/02/2025"
+      }
+    ],
   "faqs": [
     {
       "id": "faq-001",
