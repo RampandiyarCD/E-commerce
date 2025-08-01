@@ -1,0 +1,67 @@
+ *{
+    margin:0 ;
+    text-decoration: none;
+    }
+    .nav-bar{
+        background-image: url(/src/assets/Pasted\ image.png);
+        background-size: cover;
+        display: flex;
+        height: 50px;
+        padding: 5px;
+        transition: 0.5s;
+        width : 100vw;
+        margin: 0%;  
+    }
+    .search-bar{
+        border: 10px;
+        border-style: none;
+        border-radius: 20px;
+        position: absolute;
+    }
+    img{
+        position: absolute;
+        left:57.5%;
+    }
+    .nav-bar ul{
+        display: flex;
+        margin: 10px;
+        gap: 40px;
+        list-style: none;
+        margin-left: 78%;
+
+    }
+    .nav-item{
+        font-style: initial;
+        color: wheat;
+        text-decoration: none;
+    }
+
+    h2{
+        display: inline;
+        color: aliceblue;
+        padding: 5px;
+        position: absolute;
+        left: 8%;
+        z-index: 3;
+        
+    }
+    .search-bar{
+        display: inline-block;
+        width: 25%;
+        margin-left: 35%;
+        text-align: center;
+        height: 30px;
+        margin-top: 5px;
+
+    }
+    .searchlogo{
+        width: 20px;
+        height: 20px;
+        padding: 13px;
+    }
+    .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
