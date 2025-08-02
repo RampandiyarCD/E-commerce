@@ -1,0 +1,48 @@
+.aboutUs-heading {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.aboutUs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.aboutUs-tab {
+  margin: 0.2rem;
+  text-align: start;
+  width: 80vw;
+  max-width: 1500px;
+  border-radius: 8px;
+  padding: 0px 2rem;
+  background-color: #a78bfa;
+  color: white;
+}
+
+.aboutUs-tab summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  list-style: none;
+  border-bottom: 1px solid #d1cdcd;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.aboutUs-tab-open {
+  animation: openTab 0.5s 1;
+  padding: 1rem;
+  line-height: 1.5rem;
+  background-color: #a78bfa;
+}
+@keyframes openTab {
+  0% {
+    transform: translateY(-75%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

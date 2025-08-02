@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playwrite HU", cursive;
+  font-weight: 900;
+}
+
+button {
+  background-color: #f1effb; /*or this according to the need #a78bfa;*/
+  color: #2c3e50; /*or this according to the need white;*/
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1cdcd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
